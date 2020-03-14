@@ -26,15 +26,27 @@ class App extends Component {
 
     return (
       <div className='container'>
+        <h1>
+          React Tutorial{' '}
+          <span role='img' aria-label='rocket'>
+            🚀
+          </span>
+        </h1>
+        <p>Add a character with a name and a job to the table.</p>
         <Table
           characterData={characters}
           removeCharacter={this.removeCharacter}
         />
+        <h3>
+          Add New
+          <span role='img' aria-label='silhouette of person'>
+            👤
+          </span>
+        </h3>
         <Form handleSubmit={this.handleSubmit} />
       </div>
     );
   }
 }
-
 
 export default App;
